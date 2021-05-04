@@ -37,19 +37,28 @@ import UIKit
 //    var y = 0.0
 //}
 
-class Point {
-    var x = 0.0
-    var y = 0.0
-}
+//class Point {
+//    var x = 0.0
+//    var y = 0.0
+//}
+//
+//let point = Point.init()
+//
+//var cPoint = point
+//cPoint.x = 5
+//
+////struct - 0.0 : 5.0 [Call by Value]
+////class  - 5.0 : 5.0 [Call by Referance]
+//print("\(point.x) : \(cPoint.x)")
 
-let point = Point.init()
-
-var cPoint = point
-cPoint.x = 5
-
-//struct - 0.0 : 5.0 [Call by Value]
-//class  - 5.0 : 5.0 [Call by Referance]
-print("\(point.x) : \(cPoint.x)")
 
 
+//var test: Int
+var test: Int!
+test = nil
+print("\(test)")
+
+
+var someValue: Int? = 30
+var Value = someValue
 
