@@ -62,3 +62,8 @@ print("\(test)")
 var someValue: Int? = 30
 var Value = someValue
 
+//욥셔널 바인딩(Optional Binding)
+//옵셔널 체이닝(Optional Chanining)
+//강제 언랩핑(Forced Unwrapping)
+
+
