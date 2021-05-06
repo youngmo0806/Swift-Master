@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD2005F62643BC8E00175E16 /* yagomTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = yagomTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADC10BFA26413C54003C5EF7 /* Swift-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC10BFF26413C54003C5EF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 				ADC10C0626413C57003C5EF7 /* Assets.xcassets */,
 				ADC10C0826413C57003C5EF7 /* LaunchScreen.storyboard */,
 				ADC10C0B26413C57003C5EF7 /* Info.plist */,
+				AD2005F62643BC8E00175E16 /* yagomTest.playground */,
 				ADC10C1126413C8D003C5EF7 /* ZeddTest.playground */,
 			);
 			path = "Swift-Master";
