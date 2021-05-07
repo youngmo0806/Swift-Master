@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		AD2005F62643BC8E00175E16 /* yagomTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = yagomTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ADAD38EE2644A924009EF5B4 /* fastCampus.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = fastCampus.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADC10BFA26413C54003C5EF7 /* Swift-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC10BFF26413C54003C5EF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */,
+				ADAD38EE2644A924009EF5B4 /* fastCampus.playground */,
 				ADC10BFF26413C54003C5EF7 /* SceneDelegate.swift */,
 				ADC10C0126413C54003C5EF7 /* ViewController.swift */,
 				ADC10C0326413C54003C5EF7 /* Main.storyboard */,
