@@ -6,4 +6,13 @@ import UIKit
 //    프로토콜 정의
 //}
 
+protocol SomeProtocol {
+    var testA: String { get set }
+    
+    var testB: String { get }
+}
 
+protocol AnotherProtocol {
+    static var someTypeProperty: Int {get set}
+    static var anotherTypeProperty: Int {get}
+}
