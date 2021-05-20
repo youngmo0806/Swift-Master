@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D6E14265602E90048E4E2 /* SecondViewController.swift */; };
+		AD9D6E17265619550048E4E2 /* FirstNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D6E16265619550048E4E2 /* FirstNavigationController.swift */; };
+		AD9D6E19265619650048E4E2 /* SecondNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D6E18265619650048E4E2 /* SecondNavigationController.swift */; };
+		AD9D6E1C265637330048E4E2 /* ManualFirstViewControllor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D6E1B265637330048E4E2 /* ManualFirstViewControllor.swift */; };
 		ADAD38F2264CE4E3009EF5B4 /* Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F1264CE4E3009EF5B4 /* Sendable.swift */; };
 		ADAD38F4264CE520009EF5B4 /* Receiveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F3264CE520009EF5B4 /* Receiveable.swift */; };
 		ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F5264CE84B009EF5B4 /* Message.swift */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		AD2005F62643BC8E00175E16 /* yagomTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = yagomTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD9D6E14265602E90048E4E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AD9D6E16265619550048E4E2 /* FirstNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationController.swift; sourceTree = "<group>"; };
+		AD9D6E18265619650048E4E2 /* SecondNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationController.swift; sourceTree = "<group>"; };
+		AD9D6E1B265637330048E4E2 /* ManualFirstViewControllor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualFirstViewControllor.swift; sourceTree = "<group>"; };
 		ADAD38EE2644A924009EF5B4 /* fastCampus.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = fastCampus.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADAD38F1264CE4E3009EF5B4 /* Sendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sendable.swift; sourceTree = "<group>"; };
 		ADAD38F3264CE520009EF5B4 /* Receiveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiveable.swift; sourceTree = "<group>"; };
@@ -48,6 +56,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD9D6E13265602BD0048E4E2 /* ViewPresenting */ = {
+			isa = PBXGroup;
+			children = (
+				ADC10C0126413C54003C5EF7 /* ViewController.swift */,
+				AD9D6E14265602E90048E4E2 /* SecondViewController.swift */,
+				AD9D6E16265619550048E4E2 /* FirstNavigationController.swift */,
+				AD9D6E18265619650048E4E2 /* SecondNavigationController.swift */,
+			);
+			path = ViewPresenting;
+			sourceTree = "<group>";
+		};
+		AD9D6E1A26562D230048E4E2 /* ManualSegue */ = {
+			isa = PBXGroup;
+			children = (
+				AD9D6E1B265637330048E4E2 /* ManualFirstViewControllor.swift */,
+			);
+			path = ManualSegue;
+			sourceTree = "<group>";
+		};
 		ADC10BF126413C54003C5EF7 = {
 			isa = PBXGroup;
 			children = (
@@ -67,10 +94,11 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				AD9D6E1A26562D230048E4E2 /* ManualSegue */,
+				AD9D6E13265602BD0048E4E2 /* ViewPresenting */,
 				ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */,
 				ADAD38EE2644A924009EF5B4 /* fastCampus.playground */,
 				ADC10BFF26413C54003C5EF7 /* SceneDelegate.swift */,
-				ADC10C0126413C54003C5EF7 /* ViewController.swift */,
 				ADC10C0326413C54003C5EF7 /* Main.storyboard */,
 				ADC10C0626413C57003C5EF7 /* Assets.xcassets */,
 				ADC10C0826413C57003C5EF7 /* LaunchScreen.storyboard */,
@@ -158,7 +186,11 @@
 				ADC10C0226413C54003C5EF7 /* ViewController.swift in Sources */,
 				ADC10BFE26413C54003C5EF7 /* AppDelegate.swift in Sources */,
 				ADAD38F4264CE520009EF5B4 /* Receiveable.swift in Sources */,
+				AD9D6E1C265637330048E4E2 /* ManualFirstViewControllor.swift in Sources */,
+				AD9D6E17265619550048E4E2 /* FirstNavigationController.swift in Sources */,
+				AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */,
 				ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */,
+				AD9D6E19265619650048E4E2 /* SecondNavigationController.swift in Sources */,
 				ADC10C0026413C54003C5EF7 /* SceneDelegate.swift in Sources */,
 				ADAD38F2264CE4E3009EF5B4 /* Sendable.swift in Sources */,
 				ADAD38F8264CF143009EF5B4 /* TestProtocal.swift in Sources */,
