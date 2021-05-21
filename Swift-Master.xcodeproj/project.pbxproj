@@ -20,6 +20,10 @@
 		ADC10C0526413C54003C5EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC10C0326413C54003C5EF7 /* Main.storyboard */; };
 		ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC10C0626413C57003C5EF7 /* Assets.xcassets */; };
 		ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC10C0826413C57003C5EF7 /* LaunchScreen.storyboard */; };
+		ADF9862D265741C1002A5653 /* PrepareTesrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9862C265741C1002A5653 /* PrepareTesrViewController.swift */; };
+		ADF9863026574B55002A5653 /* Data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9862F26574B55002A5653 /* Data.storyboard */; };
+		ADF9863226574C5C002A5653 /* DataViewControllor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9863126574C5C002A5653 /* DataViewControllor.swift */; };
+		ADF9863426575040002A5653 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9863326575040002A5653 /* ResultViewController.swift */; };
 		F441577D2656B2CE004D97B3 /* UnWindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441577C2656B2CE004D97B3 /* UnWindViewController.swift */; };
 		F441577F2656B6B2004D97B3 /* UnWindTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441577E2656B6B2004D97B3 /* UnWindTest.swift */; };
 		F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157802656B790004D97B3 /* UnWindTest2.swift */; };
@@ -46,6 +50,10 @@
 		ADC10C0926413C57003C5EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC10C0B26413C57003C5EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC10C1126413C8D003C5EF7 /* ZeddTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ZeddTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ADF9862C265741C1002A5653 /* PrepareTesrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareTesrViewController.swift; sourceTree = "<group>"; };
+		ADF9862F26574B55002A5653 /* Data.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Data.storyboard; sourceTree = "<group>"; };
+		ADF9863126574C5C002A5653 /* DataViewControllor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewControllor.swift; sourceTree = "<group>"; };
+		ADF9863326575040002A5653 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F441577C2656B2CE004D97B3 /* UnWindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindViewController.swift; sourceTree = "<group>"; };
 		F441577E2656B6B2004D97B3 /* UnWindTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest.swift; sourceTree = "<group>"; };
 		F44157802656B790004D97B3 /* UnWindTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest2.swift; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				ADF9862E26574B35002A5653 /* ViewDataPresent */,
 				F44157872656BB63004D97B3 /* ProtocalTest */,
 				F44157822656B84E004D97B3 /* CustomSegue */,
 				AD9D6E1A26562D230048E4E2 /* ManualSegue */,
@@ -121,11 +130,22 @@
 			path = "Swift-Master";
 			sourceTree = "<group>";
 		};
+		ADF9862E26574B35002A5653 /* ViewDataPresent */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9862F26574B55002A5653 /* Data.storyboard */,
+				ADF9863126574C5C002A5653 /* DataViewControllor.swift */,
+				ADF9863326575040002A5653 /* ResultViewController.swift */,
+			);
+			name = ViewDataPresent;
+			sourceTree = "<group>";
+		};
 		F44157822656B84E004D97B3 /* CustomSegue */ = {
 			isa = PBXGroup;
 			children = (
 				F44157832656B87E004D97B3 /* NewSegue.swift */,
 				F44157852656BA33004D97B3 /* Second.storyboard */,
+				ADF9862C265741C1002A5653 /* PrepareTesrViewController.swift */,
 			);
 			path = CustomSegue;
 			sourceTree = "<group>";
@@ -201,6 +221,7 @@
 				F44157862656BA33004D97B3 /* Second.storyboard in Resources */,
 				ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */,
 				ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */,
+				ADF9863026574B55002A5653 /* Data.storyboard in Resources */,
 				ADC10C0526413C54003C5EF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +239,10 @@
 				AD9D6E1C265637330048E4E2 /* ManualFirstViewControllor.swift in Sources */,
 				AD9D6E17265619550048E4E2 /* FirstNavigationController.swift in Sources */,
 				F441577F2656B6B2004D97B3 /* UnWindTest.swift in Sources */,
+				ADF9863226574C5C002A5653 /* DataViewControllor.swift in Sources */,
 				F441577D2656B2CE004D97B3 /* UnWindViewController.swift in Sources */,
+				ADF9863426575040002A5653 /* ResultViewController.swift in Sources */,
+				ADF9862D265741C1002A5653 /* PrepareTesrViewController.swift in Sources */,
 				F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */,
 				AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */,
 				ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */,
