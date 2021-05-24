@@ -26,7 +26,7 @@ class DataViewControllor: UIViewController {
         }
         
     }
-    
+//
     @IBAction func onStepper(_ sender: UIStepper) {
         let cnt = Int(sender.value)
         self.intervalText.text = "\(cnt) 마다"
@@ -37,9 +37,9 @@ class DataViewControllor: UIViewController {
             return
         }
         
-        rvc.email = self.email.text!
-        rvc.update = self.isUpdate.isOn
-        rvc.interval = self.interval.value
+//        rvc.email = self.email.text!
+//        rvc.update = self.isUpdate.isOn
+//        rvc.interval = self.interval.value
         
         //일반 뷰컨트롤러 이동
 //        self.present(rvc, animated: true, completion: nil)
@@ -56,7 +56,30 @@ class DataViewControllor: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+//        //목적지 뷰 컨트롤러 인스턴스 읽어오기
+//        let dest = segue.destination
+//
+//        guard let rvc = dest as? ResultViewController else {
+//            return
+//        }
+//
+//        rvc.email = self.email.text!
+//        rvc.update = self.isUpdate.isOn
+//        rvc.interval = self.interval.value
         
+        //AppDelegate 저장 변수로 데이터 넘기기
+//        let ad = UIApplication.shared.delegate as? AppDelegate
+//
+//        ad?.paramEmail = self.email.text!
+//        ad?.paramUpdate = self.isUpdate.isOn
+//        ad?.paramInterval = self.interval.value
+
+        //UserDefault 로 저장해보기
+        let ud = UserDefaults.standard
+        
+        ud.set(self.email.text , forKey: "email")
+        ud.set(self.isUpdate.isOn , forKey: "update")
+        ud.set(self.interval.value , forKey: "interval")
         
     }
 }
