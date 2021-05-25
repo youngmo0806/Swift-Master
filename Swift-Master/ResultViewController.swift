@@ -19,7 +19,7 @@ class ResultViewController: UIViewController {
 //    var interval: Double = 0
     
     override func viewDidLoad() {
-        
+
         //AppDelegate 를 이용한 방법
 //        let ad = UIApplication.shared.delegate as? AppDelegate
 //
