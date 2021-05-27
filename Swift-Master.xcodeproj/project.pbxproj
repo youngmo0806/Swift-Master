@@ -98,6 +98,13 @@
 			path = ManualSegue;
 			sourceTree = "<group>";
 		};
+		ADBED8A7265DE8A200A92EAB /* LocalAlarm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalAlarm;
+			sourceTree = "<group>";
+		};
 		ADC10BF126413C54003C5EF7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +124,7 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				ADBED8A7265DE8A200A92EAB /* LocalAlarm */,
 				ADF98635265C9017002A5653 /* Message */,
 				ADF9862E26574B35002A5653 /* ViewDataPresent */,
 				F44157872656BB63004D97B3 /* ProtocalTest */,

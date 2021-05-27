@@ -50,7 +50,6 @@ class DataViewControllor: UIViewController {
     
     
     @IBAction func onPerformSegue(_ sender: Any) {
-        
         self.performSegue(withIdentifier: "MaunalSubmit", sender: self)
     }
     
@@ -83,4 +82,3 @@ class DataViewControllor: UIViewController {
         
     }
 }
-
