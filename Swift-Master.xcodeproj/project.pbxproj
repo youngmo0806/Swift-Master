@@ -31,6 +31,8 @@
 		F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157802656B790004D97B3 /* UnWindTest2.swift */; };
 		F44157842656B87E004D97B3 /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157832656B87E004D97B3 /* NewSegue.swift */; };
 		F44157862656BA33004D97B3 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44157852656BA33004D97B3 /* Second.storyboard */; };
+		F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */; };
+		F4EA51F0265FE5890049C8D0 /* LocalAlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		F44157802656B790004D97B3 /* UnWindTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest2.swift; sourceTree = "<group>"; };
 		F44157832656B87E004D97B3 /* NewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 		F44157852656BA33004D97B3 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
+		F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalAlarmController.swift; path = "Swift-Master/LocalAlarmController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		ADBED8A7265DE8A200A92EAB /* LocalAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */,
+				F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */,
 			);
 			path = LocalAlarm;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */,
 				F44157862656BA33004D97B3 /* Second.storyboard in Resources */,
 				ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */,
 				ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */,
@@ -267,6 +274,7 @@
 				ADF9863426575040002A5653 /* ResultViewController.swift in Sources */,
 				ADF9862D265741C1002A5653 /* PrepareTesrViewController.swift in Sources */,
 				ADF98639265CD366002A5653 /* MessageViewController.swift in Sources */,
+				F4EA51F0265FE5890049C8D0 /* LocalAlarmController.swift in Sources */,
 				F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */,
 				AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */,
 				ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */,
