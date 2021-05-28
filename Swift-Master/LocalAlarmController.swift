@@ -12,8 +12,6 @@ class LocalAlarmController: UIViewController {
     @IBOutlet weak var msg: UITextField!
     @IBOutlet weak var datepicker: UIDatePicker!
     
-    
-    
     @IBAction func save(_ sender: Any) {
         
         if #available(iOS 10.0, *){

@@ -15,6 +15,8 @@
 		ADAD38F4264CE520009EF5B4 /* Receiveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F3264CE520009EF5B4 /* Receiveable.swift */; };
 		ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F5264CE84B009EF5B4 /* Message.swift */; };
 		ADAD38F8264CF143009EF5B4 /* TestProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD38F7264CF143009EF5B4 /* TestProtocal.swift */; };
+		ADBED8AA2660BDCF00A92EAB /* DelegatePt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBED8A92660BDCF00A92EAB /* DelegatePt.storyboard */; };
+		ADBED8AC2660BDE900A92EAB /* DelegatePtController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBED8AB2660BDE900A92EAB /* DelegatePtController.swift */; };
 		ADC10BFE26413C54003C5EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */; };
 		ADC10C0226413C54003C5EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC10C0126413C54003C5EF7 /* ViewController.swift */; };
 		ADC10C0526413C54003C5EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC10C0326413C54003C5EF7 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		ADAD38F3264CE520009EF5B4 /* Receiveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiveable.swift; sourceTree = "<group>"; };
 		ADAD38F5264CE84B009EF5B4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ADAD38F7264CF143009EF5B4 /* TestProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocal.swift; sourceTree = "<group>"; };
+		ADBED8A92660BDCF00A92EAB /* DelegatePt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePt.storyboard; sourceTree = "<group>"; };
+		ADBED8AB2660BDE900A92EAB /* DelegatePtController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePtController.swift; sourceTree = "<group>"; };
 		ADC10BFA26413C54003C5EF7 /* Swift-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC10C0126413C54003C5EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,15 @@
 			path = LocalAlarm;
 			sourceTree = "<group>";
 		};
+		ADBED8A82660BDB300A92EAB /* DelegatePatten */ = {
+			isa = PBXGroup;
+			children = (
+				ADBED8A92660BDCF00A92EAB /* DelegatePt.storyboard */,
+				ADBED8AB2660BDE900A92EAB /* DelegatePtController.swift */,
+			);
+			path = DelegatePatten;
+			sourceTree = "<group>";
+		};
 		ADC10BF126413C54003C5EF7 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				ADBED8A82660BDB300A92EAB /* DelegatePatten */,
 				ADBED8A7265DE8A200A92EAB /* LocalAlarm */,
 				ADF98635265C9017002A5653 /* Message */,
 				ADF9862E26574B35002A5653 /* ViewDataPresent */,
@@ -247,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */,
+				ADBED8AA2660BDCF00A92EAB /* DelegatePt.storyboard in Resources */,
 				F44157862656BA33004D97B3 /* Second.storyboard in Resources */,
 				ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */,
 				ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */,
@@ -279,6 +294,7 @@
 				AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */,
 				ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */,
 				AD9D6E19265619650048E4E2 /* SecondNavigationController.swift in Sources */,
+				ADBED8AC2660BDE900A92EAB /* DelegatePtController.swift in Sources */,
 				F44157842656B87E004D97B3 /* NewSegue.swift in Sources */,
 				ADAD38F2264CE4E3009EF5B4 /* Sendable.swift in Sources */,
 				ADAD38F8264CF143009EF5B4 /* TestProtocal.swift in Sources */,
