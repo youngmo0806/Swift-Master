@@ -45,9 +45,6 @@ class DelegatePtController: UIViewController, UITextFieldDelegate {
         
         self.tf.delegate = self
         
-        
-        
-        
     }
     
     @IBAction func input(_ sender: Any) {
@@ -56,5 +53,20 @@ class DelegatePtController: UIViewController, UITextFieldDelegate {
     
     @IBAction func conFirm(_ sender: Any) {
         self.tf.resignFirstResponder()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("텍스트의 내용이 \(string)으로 변경됩니다.")
+        
+        if Int(string) == nil { //입력된 값이 숫자가 아니라면 true를 리턴
+
+            if (textField.text?.count)! + string.count > 10 {    //현재 텍스트 필드에 입력된 길이와 더해질 문자열 길이의 합이 10이 넘는다면 반영하지 않음
+               return false
+            }else{
+                return true
+            }
+        } else {
+            return false
+        }
     }
 }

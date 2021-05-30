@@ -28,11 +28,14 @@
 		ADF9863426575040002A5653 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9863326575040002A5653 /* ResultViewController.swift */; };
 		ADF98637265CD2B2002A5653 /* MessageTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF98636265CD2B2002A5653 /* MessageTest.storyboard */; };
 		ADF98639265CD366002A5653 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF98638265CD366002A5653 /* MessageViewController.swift */; };
+		F4326D8A26614DCD0061B9B9 /* TableTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4326D8926614DCD0061B9B9 /* TableTest.storyboard */; };
+		F4326D8C26614E1A0061B9B9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4326D8B26614E1A0061B9B9 /* TableViewController.swift */; };
 		F441577D2656B2CE004D97B3 /* UnWindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441577C2656B2CE004D97B3 /* UnWindViewController.swift */; };
 		F441577F2656B6B2004D97B3 /* UnWindTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441577E2656B6B2004D97B3 /* UnWindTest.swift */; };
 		F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157802656B790004D97B3 /* UnWindTest2.swift */; };
 		F44157842656B87E004D97B3 /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157832656B87E004D97B3 /* NewSegue.swift */; };
 		F44157862656BA33004D97B3 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44157852656BA33004D97B3 /* Second.storyboard */; };
+		F4CB08B2266232DF006A3428 /* Auto-Resizing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */; };
 		F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */; };
 		F4EA51F0265FE5890049C8D0 /* LocalAlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */; };
 /* End PBXBuildFile section */
@@ -64,11 +67,14 @@
 		ADF9863326575040002A5653 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		ADF98636265CD2B2002A5653 /* MessageTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageTest.storyboard; sourceTree = "<group>"; };
 		ADF98638265CD366002A5653 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		F4326D8926614DCD0061B9B9 /* TableTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableTest.storyboard; sourceTree = "<group>"; };
+		F4326D8B26614E1A0061B9B9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F441577C2656B2CE004D97B3 /* UnWindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindViewController.swift; sourceTree = "<group>"; };
 		F441577E2656B6B2004D97B3 /* UnWindTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest.swift; sourceTree = "<group>"; };
 		F44157802656B790004D97B3 /* UnWindTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest2.swift; sourceTree = "<group>"; };
 		F44157832656B87E004D97B3 /* NewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 		F44157852656BA33004D97B3 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Auto-Resizing.storyboard"; sourceTree = "<group>"; };
 		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalAlarmController.swift; path = "Swift-Master/LocalAlarmController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -143,6 +149,8 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				F4CB08B0266232C5006A3428 /* Auto-Resizing */,
+				F4326D8826614D900061B9B9 /* TableView */,
 				ADBED8A82660BDB300A92EAB /* DelegatePatten */,
 				ADBED8A7265DE8A200A92EAB /* LocalAlarm */,
 				ADF98635265C9017002A5653 /* Message */,
@@ -182,6 +190,15 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		F4326D8826614D900061B9B9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F4326D8926614DCD0061B9B9 /* TableTest.storyboard */,
+				F4326D8B26614E1A0061B9B9 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		F44157822656B84E004D97B3 /* CustomSegue */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +218,14 @@
 				ADAD38F7264CF143009EF5B4 /* TestProtocal.swift */,
 			);
 			path = ProtocalTest;
+			sourceTree = "<group>";
+		};
+		F4CB08B0266232C5006A3428 /* Auto-Resizing */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */,
+			);
+			path = "Auto-Resizing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +287,9 @@
 			files = (
 				F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */,
 				ADBED8AA2660BDCF00A92EAB /* DelegatePt.storyboard in Resources */,
+				F4326D8A26614DCD0061B9B9 /* TableTest.storyboard in Resources */,
 				F44157862656BA33004D97B3 /* Second.storyboard in Resources */,
+				F4CB08B2266232DF006A3428 /* Auto-Resizing.storyboard in Resources */,
 				ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */,
 				ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */,
 				ADF9863026574B55002A5653 /* Data.storyboard in Resources */,
@@ -279,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC10C0226413C54003C5EF7 /* ViewController.swift in Sources */,
+				F4326D8C26614E1A0061B9B9 /* TableViewController.swift in Sources */,
 				ADC10BFE26413C54003C5EF7 /* AppDelegate.swift in Sources */,
 				ADAD38F4264CE520009EF5B4 /* Receiveable.swift in Sources */,
 				AD9D6E1C265637330048E4E2 /* ManualFirstViewControllor.swift in Sources */,
