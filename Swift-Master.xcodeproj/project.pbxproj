@@ -35,6 +35,10 @@
 		F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157802656B790004D97B3 /* UnWindTest2.swift */; };
 		F44157842656B87E004D97B3 /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44157832656B87E004D97B3 /* NewSegue.swift */; };
 		F44157862656BA33004D97B3 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44157852656BA33004D97B3 /* Second.storyboard */; };
+		F45C5F742671B3770045AEC1 /* CustomStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45C5F732671B3770045AEC1 /* CustomStory.storyboard */; };
+		F45C5F782671B4B00045AEC1 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C5F772671B4B00045AEC1 /* CustomViewController.swift */; };
+		F48ABFCC2671FF4700F8E76B /* CustomTest1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48ABFCB2671FF4700F8E76B /* CustomTest1Controller.swift */; };
+		F48ABFCE2672138400F8E76B /* CustomTest2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48ABFCD2672138400F8E76B /* CustomTest2Controller.swift */; };
 		F4CB08B2266232DF006A3428 /* Auto-Resizing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */; };
 		F4EA51EE265FE5150049C8D0 /* LocalAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */; };
 		F4EA51F0265FE5890049C8D0 /* LocalAlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */; };
@@ -74,6 +78,10 @@
 		F44157802656B790004D97B3 /* UnWindTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnWindTest2.swift; sourceTree = "<group>"; };
 		F44157832656B87E004D97B3 /* NewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 		F44157852656BA33004D97B3 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		F45C5F732671B3770045AEC1 /* CustomStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomStory.storyboard; sourceTree = "<group>"; };
+		F45C5F772671B4B00045AEC1 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		F48ABFCB2671FF4700F8E76B /* CustomTest1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTest1Controller.swift; sourceTree = "<group>"; };
+		F48ABFCD2672138400F8E76B /* CustomTest2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTest2Controller.swift; sourceTree = "<group>"; };
 		F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Auto-Resizing.storyboard"; sourceTree = "<group>"; };
 		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalAlarmController.swift; path = "Swift-Master/LocalAlarmController.swift"; sourceTree = SOURCE_ROOT; };
@@ -149,6 +157,7 @@
 		ADC10BFC26413C54003C5EF7 /* Swift-Master */ = {
 			isa = PBXGroup;
 			children = (
+				F45C5F722671B33A0045AEC1 /* CustomCoding */,
 				F4CB08B0266232C5006A3428 /* Auto-Resizing */,
 				F4326D8826614D900061B9B9 /* TableView */,
 				ADBED8A82660BDB300A92EAB /* DelegatePatten */,
@@ -220,6 +229,17 @@
 			path = ProtocalTest;
 			sourceTree = "<group>";
 		};
+		F45C5F722671B33A0045AEC1 /* CustomCoding */ = {
+			isa = PBXGroup;
+			children = (
+				F45C5F732671B3770045AEC1 /* CustomStory.storyboard */,
+				F45C5F772671B4B00045AEC1 /* CustomViewController.swift */,
+				F48ABFCB2671FF4700F8E76B /* CustomTest1Controller.swift */,
+				F48ABFCD2672138400F8E76B /* CustomTest2Controller.swift */,
+			);
+			path = CustomCoding;
+			sourceTree = "<group>";
+		};
 		F4CB08B0266232C5006A3428 /* Auto-Resizing */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +309,7 @@
 				ADBED8AA2660BDCF00A92EAB /* DelegatePt.storyboard in Resources */,
 				F4326D8A26614DCD0061B9B9 /* TableTest.storyboard in Resources */,
 				F44157862656BA33004D97B3 /* Second.storyboard in Resources */,
+				F45C5F742671B3770045AEC1 /* CustomStory.storyboard in Resources */,
 				F4CB08B2266232DF006A3428 /* Auto-Resizing.storyboard in Resources */,
 				ADC10C0A26413C57003C5EF7 /* LaunchScreen.storyboard in Resources */,
 				ADC10C0726413C57003C5EF7 /* Assets.xcassets in Resources */,
@@ -307,6 +328,7 @@
 			files = (
 				ADC10C0226413C54003C5EF7 /* ViewController.swift in Sources */,
 				F4326D8C26614E1A0061B9B9 /* TableViewController.swift in Sources */,
+				F45C5F782671B4B00045AEC1 /* CustomViewController.swift in Sources */,
 				ADC10BFE26413C54003C5EF7 /* AppDelegate.swift in Sources */,
 				ADAD38F4264CE520009EF5B4 /* Receiveable.swift in Sources */,
 				AD9D6E1C265637330048E4E2 /* ManualFirstViewControllor.swift in Sources */,
@@ -316,8 +338,10 @@
 				F441577D2656B2CE004D97B3 /* UnWindViewController.swift in Sources */,
 				ADF9863426575040002A5653 /* ResultViewController.swift in Sources */,
 				ADF9862D265741C1002A5653 /* PrepareTesrViewController.swift in Sources */,
+				F48ABFCC2671FF4700F8E76B /* CustomTest1Controller.swift in Sources */,
 				ADF98639265CD366002A5653 /* MessageViewController.swift in Sources */,
 				F4EA51F0265FE5890049C8D0 /* LocalAlarmController.swift in Sources */,
+				F48ABFCE2672138400F8E76B /* CustomTest2Controller.swift in Sources */,
 				F44157812656B790004D97B3 /* UnWindTest2.swift in Sources */,
 				AD9D6E15265602E90048E4E2 /* SecondViewController.swift in Sources */,
 				ADAD38F6264CE84B009EF5B4 /* Message.swift in Sources */,
