@@ -202,11 +202,11 @@
 				AD9D6E1A26562D230048E4E2 /* ManualSegue */,
 				AD9D6E13265602BD0048E4E2 /* ViewPresenting */,
 				ADC10BFD26413C54003C5EF7 /* AppDelegate.swift */,
-				ADAD38EE2644A924009EF5B4 /* fastCampus.playground */,
 				ADC10C0326413C54003C5EF7 /* Main.storyboard */,
 				ADC10C0626413C57003C5EF7 /* Assets.xcassets */,
 				ADC10C0826413C57003C5EF7 /* LaunchScreen.storyboard */,
 				ADC10C0B26413C57003C5EF7 /* Info.plist */,
+				ADAD38EE2644A924009EF5B4 /* fastCampus.playground */,
 				AD2005F62643BC8E00175E16 /* yagomTest.playground */,
 				ADC10C1126413C8D003C5EF7 /* ZeddTest.playground */,
 			);
