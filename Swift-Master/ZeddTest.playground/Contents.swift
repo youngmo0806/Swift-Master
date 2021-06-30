@@ -152,18 +152,39 @@ import UIKit
 //    print(arr[i])
 //}
 
-
-
-
-
-var test = "1 2"
-
-var aa = test.components(separatedBy: " ").map({ (value: String) -> Int in return Int(value)!})
-var bb = test.components(separatedBy: " ").map({ Int($0)! })
-//    print(Int(aa[0])! + Int(aa[1])!)
-print(aa)
-print(bb)
+//var test = "1 2"
+//
+//var aa = test.components(separatedBy: " ").map({ (value: String) -> Int in return Int(value)!})
+//var bb = test.components(separatedBy: " ").map({ Int($0)! })
+////    print(Int(aa[0])! + Int(aa[1])!)
+//print(aa)
+//print(bb)
 
 //for i in 0..<aa.count {
 //    print(aa[i])
 //}
+
+class Point {
+    var tempX: Int = 1
+    
+    var x:Int {
+        get {
+            return tempX
+        }
+        
+//        set {
+//            tempX = newValue * 2
+//        }
+        
+        set (inputData){
+            tempX = inputData * 2
+        }
+    }
+}
+
+var p: Point = Point()
+p.x = 12
+
+print(p.x)
+
+//-------------------------------------------------------------------------------------------
