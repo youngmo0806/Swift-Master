@@ -159,8 +159,10 @@ import UIKit
 var test = "1 2"
 
 var aa = test.components(separatedBy: " ").map({ (value: String) -> Int in return Int(value)!})
+var bb = test.components(separatedBy: " ").map({ Int($0)! })
 //    print(Int(aa[0])! + Int(aa[1])!)
 print(aa)
+print(bb)
 
 //for i in 0..<aa.count {
 //    print(aa[i])
