@@ -62,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		9F72C974268C32D300695B38 /* CodableTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodableTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9FA157A2268C36900050DE56 /* ProtocolTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9FD11E36268B0AB50046BF68 /* HigherOrderFunction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HigherOrderFunction.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD2005F62643BC8E00175E16 /* yagomTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = yagomTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD9D6E14265602E90048E4E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +213,7 @@
 				AD2005F62643BC8E00175E16 /* yagomTest.playground */,
 				ADC10C1126413C8D003C5EF7 /* ZeddTest.playground */,
 				9FD11E36268B0AB50046BF68 /* HigherOrderFunction.playground */,
+				9FA157A2268C36900050DE56 /* ProtocolTest.playground */,
 				9F72C974268C32D300695B38 /* CodableTest.playground */,
 			);
 			path = "Swift-Master";
