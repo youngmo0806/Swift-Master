@@ -393,6 +393,7 @@ value.name
 
 
 //-----------------------------------------------------------------------------------------
+//extension에 제약사항을 준다.
 
 protocol Concatenate {
     var name: String { get }
@@ -417,3 +418,12 @@ extension Collection where Iterator.Element : Concatenate {
         return itemsAsText.joined(separator: " ")
     }
 }
+
+var someName = SomeClass()
+someName.name = "Martin"
+
+var someName2 = SomeClass()
+someName2.name = "Garrix"
+
+var arrr = [someName, someName2]
+print(arrr.concatenateString)
