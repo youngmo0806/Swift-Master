@@ -117,6 +117,7 @@
 		F48ABFE02675E71900F8E76B /* connectivity-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connectivity-bar.png"; sourceTree = "<group>"; };
 		F48ABFE12675E71900F8E76B /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		F48ABFE22675E71A00F8E76B /* file-tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-tree.png"; sourceTree = "<group>"; };
+		F4B3DA6F26D39017003D6851 /* ios_30_project.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ios_30_project.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Auto-Resizing.storyboard"; sourceTree = "<group>"; };
 		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalAlarmController.swift; path = "Swift-Master/LocalAlarmController.swift"; sourceTree = SOURCE_ROOT; };
@@ -209,6 +210,7 @@
 				ADC10C0626413C57003C5EF7 /* Assets.xcassets */,
 				ADC10C0826413C57003C5EF7 /* LaunchScreen.storyboard */,
 				ADC10C0B26413C57003C5EF7 /* Info.plist */,
+				F4B3DA6F26D39017003D6851 /* ios_30_project.playground */,
 				ADAD38EE2644A924009EF5B4 /* fastCampus.playground */,
 				AD2005F62643BC8E00175E16 /* yagomTest.playground */,
 				ADC10C1126413C8D003C5EF7 /* ZeddTest.playground */,
