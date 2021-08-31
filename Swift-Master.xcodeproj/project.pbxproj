@@ -64,6 +64,7 @@
 		9F72C974268C32D300695B38 /* CodableTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodableTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9FA157A2268C36900050DE56 /* ProtocolTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9FD11E36268B0AB50046BF68 /* HigherOrderFunction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HigherOrderFunction.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9FF351CA26DDB22E00FBE64A /* Swift Language Guide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift Language Guide.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD2005F62643BC8E00175E16 /* yagomTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = yagomTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD9D6E14265602E90048E4E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AD9D6E16265619550048E4E2 /* FirstNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationController.swift; sourceTree = "<group>"; };
@@ -217,6 +218,7 @@
 				9FD11E36268B0AB50046BF68 /* HigherOrderFunction.playground */,
 				9FA157A2268C36900050DE56 /* ProtocolTest.playground */,
 				9F72C974268C32D300695B38 /* CodableTest.playground */,
+				9FF351CA26DDB22E00FBE64A /* Swift Language Guide.playground */,
 			);
 			path = "Swift-Master";
 			sourceTree = "<group>";
