@@ -362,23 +362,272 @@ testMessage.removeSubrange(ranges)
 // "youngmo j"
 
 
+//부분 문자열
+let greetings = "Hello, World!"
+let indexs = greetings.index(of: ",") ?? greetings.endIndex
+let beginning = greetings[..<indexs]
+// beginning : Hello
+
+// SubString인 beginning을 String으로 변환(subString은 메모리에 원본 String을 계속 참조)
+let newString = String(beginning)
 
 
+//문자열과 문자 비교
+//--문자열과 문자 비교에는 == 혹은 != 연산자를 사용합니다.
+let quotations = "We're a lot alike, you and I."
+let sameQuotations = "We're a lot alike, you and I."
+if quotations == sameQuotations {
+    print("These two strings are considered equal")
+}
+// These two strings are considered equal 출력
+
+//--유니코드는 결합된 문자열을 갖고 비교하게 됩니다.
+
+// "Voulez-vous un café?" using LATIN SMALL LETTER E WITH ACUTE
+let eAcuteQuestion = "Voulez-vous un caf\u{E9}?"
+
+// "Voulez-vous un café?" using LATIN SMALL LETTER E and COMBINING ACUTE ACCENT
+let combinedEAcuteQuestion = "Voulez-vous un caf\u{65}\u{301}?"
+
+if eAcuteQuestion == combinedEAcuteQuestion {
+    print("These two strings are considered equal")
+}
+// These two strings are considered equal 출력
+
+//--접두사와 접미사 비교
+let remeoAndJuliet = [
+    "Act 1 Scene 1: Verona, A public place",
+    "Act 1 Scene 2: Capulet's mansion",
+    "Act 1 Scene 3: A room in Capulet's mansion",
+    "Act 1 Scene 4: A street outside Capulet's mansion",
+    "Act 1 Scene 5: The Great Hall in Capulet's mansion",
+    "Act 2 Scene 1: Outside Capulet's mansion",
+    "Act 2 Scene 2: Capulet's orchard",
+    "Act 2 Scene 3: Outside Friar Lawrence's cell",
+    "Act 2 Scene 4: A street in Verona",
+    "Act 2 Scene 5: Capulet's mansion",
+    "Act 2 Scene 6: Friar Lawrence's cell"
+]
+
+var act1SceneCount = 0
+for scene in remeoAndJuliet {
+    if scene.hasPrefix("Act 1 ") {
+        act1SceneCount += 1
+    }
+}
+print("There are \(act1SceneCount) scenes in Act 1")
+// There are 5 scenes in Act 1
 
 
-
-
-
-
-
-
-
-
-
-
-
+var mansionCount = 0
+var cellCount = 0
+for scene in remeoAndJuliet {
+    if scene.hasSuffix("Capulet's mansion") {
+        mansionCount += 1
+    } else if scene.hasSuffix("Friar Lawrence's cell") {
+        cellCount += 1
+    }
+}
+print("\(mansionCount) mansion scenes; \(cellCount) cell scenes")
+// 6 mansion scenes; 2 cell scenes
 
 //MARK: - 3. 콜렉션 타입(Collection Types)
+
+//Array, Set, Dictionary 세가지 지원 (swift)
+
+//Array
+var someInts = [Int]()
+print("someInts is of type [Int] with \(someInts.count) items.")
+// someInts is of type [Int] with 0 items.
+
+someInts.append(3)
+// 배열에 3을 추가 했습니다.
+someInts = []
+// 배열을 비웠습니다. 배열의 아이템 타입은 그대로 Int로 유지됩니다.
+
+
+//--기본 값으로 빈 배열 생성
+var threeDoubles = Array(repeating: 0.0, count: 3)
+//threeDouble : Double 타입의 [0.0, 0.0, 0.0]
+
+var anotherThreeDoubles = Array(repeating: 2.5, count: 3)
+// anotherThreeDoubles : [2.5, 2.5, 2.5]
+
+//연산자를 이용해 배열을 합칠수 있다.
+var sixDoubles = threeDoubles + anotherThreeDoubles
+// sixDoubles : [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]
+
+//리터럴을 이용한 배열의 생성
+var shoppingList: [String] = ["Eggs", "Milk"]
+var shoppingList2 = ["Eggs","Milk"]
+
+//원소 갯수 확인
+print("The shopping list contains \(shoppingList.count) items.")
+// The shopping list contains 2 items.
+
+//배열 비었는지 확인
+if shoppingList.isEmpty {
+    print("The shopping list is empty.")
+} else {
+    print("The shopping list is not empty.")
+}
+//The shopping list is not empty.
+
+//배열에 원소 추가
+shoppingList.append("Four")
+shoppingList.count  //3
+
+shoppingList += ["Baking Powder"]
+shoppingList += ["Chocolate Spread", "Cheese", "Butter"]
+shoppingList.count //7
+
+//배열 특정 위치의 원소 접근
+var firstItem = shoppingList[0]
+
+shoppingList[4...6] = ["Bananas","Apples"]
+// 4,5,6번째 인덱스 아이템을 Bananas, Apples 로 변환
+// 즉, 아이템 3개가 2개로 줄었다.
+
+//특정 위치에 원소 추가/삭제/접근
+shoppingList.insert("Maple Syrup", at: 0)
+shoppingList
+let mapleSyrup = shoppingList.remove(at: 0)
+print(mapleSyrup)
+firstItem = shoppingList[0]
+
+let apples = shoppingList.removeLast()
+
+//--배열의 순회
+for item in shoppingList {
+    print("items : \(item)")
+}
+// Six eggs
+// Milk
+// Flour
+// Baking Powder
+// Bananas
+
+//배열의 값과 인덱스가 필요할때는 enumerated() 메소드를 사용합니다.
+for (index, value) in shoppingList.enumerated() {
+    print("Item \(index + 1): \(value)")
+}
+// Item 1: Six eggs
+// Item 2: Milk
+// Item 3: Flour
+// Item 4: Baking Powder
+// Item 5: Bananas
+
+
+
+//Set
+//Set 형태로 저장되기 위해서는 반드시 타입이 hashable이어야만 합니다.
+//Swift에서 String, Int, Double, Bool 같은 기본 타입은 기본적으로 hashable입니다.
+//Swift에서 Set 타입은 Set으로 선언합니다.
+
+//빈 Set 생성
+var letters = Set<Character>()
+print("letters is of type Set<Character> with \(letters.count) items.")
+// letters is of type Set<Character> with 0 items.
+
+letters.insert("a")
+letters = []
+
+
+//배열 리터럴을 이용한 Set 생성
+var favoriteGenres: Set<String> = ["Rock","Classical","Hip hop"]
+var favoriteGenres2: Set = ["Rock","Classical","Hip hop"]
+
+//Set의 접근과 변경
+if favoriteGenres.isEmpty {
+    print("As far as music goes, I'm not picky.")
+} else {
+    print("I have particular music preferences.")
+}
+
+//추가
+favoriteGenres.insert("Jazz")
+favoriteGenres
+
+//삭제
+if let removeGenre = favoriteGenres.remove("Rock") {
+    print("\(removeGenre)? I'm over it.")
+} else {
+    print("I never much cared for that.")
+}
+favoriteGenres
+
+//값확인
+if favoriteGenres.contains("Funk") {
+    print("I get up on the good foot.")
+} else {
+    print("It's too funcy in here")
+}
+
+//Set의 순회
+for item in favoriteGenres {
+    print("item : -> \(item)")
+}
+
+//Set의 명령
+//intersection (교집합)
+//symmetricDifference (대칭차)
+//union (합집합)
+//subtracting (차집합)
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
+
+oddDigits.union(evenDigits).sorted()
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+oddDigits.intersection(evenDigits).sorted()
+// []
+oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
+// [1, 9]
+oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
+// [1, 2, 9]
+
+//Set의 멤버쉽과 동등 비교
+//Set의 동등비교와 맴버 여부를 확인하기 위해 각각 == 연산자와 isSuperset(of:), isStrictSubset(of:), isStrictSuperset(of:), isDisjoint(with:) 메소드를 사용합니다.
+
+let houseAnimals: Set = ["🐶", "🐱"]
+let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+let cityAnimals: Set = ["🐦", "🐭"]
+
+houseAnimals.isSubset(of: farmAnimals)
+// 참
+farmAnimals.isSuperset(of: houseAnimals)
+// 참
+farmAnimals.isDisjoint(with: cityAnimals)
+// 참
+
+
+//Dictionary [Key:Value]
+//-- Swift의 Dictionary타입은 Foundation 클래스의 NSDictionary를 bridge한 타입입니다.
+var namesOfIntegers = [Int: String]()
+namesOfIntegers[16] = "sixteen"
+namesOfIntegers = [:]
+
+var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+print("The airports dictionary contains \(airports.count) items.")
+// The airports dictionary contains 2 items.
+
+
+if airports.isEmpty {
+    print("The airport dictionary is empty.")
+} else {
+    print("The airports dictionary is not empty.")
+}
+
+
+airports["LHR"] = "London"
+
+for (key,value) in airports {
+    print("\(key):\(value)")
+}
+
+
+
+
 //MARK: - 4. 제어문(Control Flow)
 //MARK: - 5. 함수(Functions)
 //MARK: - 6. 클로저(Closure)
@@ -395,3 +644,56 @@ testMessage.removeSubrange(ranges)
 //MARK: - 17. 타입 캐스팅(Type Casting)
 //MARK: - 18. 중첩 타입(Nested Types)
 //MARK: - 19. 익스텐션(Extensions)
+// - 계산된 프로퍼티
+extension Double {
+    var km: Double { return self * 1_000.0 }
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
+}
+
+let oneInch = 25.4.mm
+print("One inch is \(oneInch) meters")
+// Prints "One inch is 0.0254 meters"
+let threeFeet = 3.ft
+print("Three feet is \(threeFeet) meters")
+// Prints "Three feet is 0.914399970739201 meters"
+
+let aMarathon = 42.km + 195.m
+print("A marathon is \(aMarathon) meters long")
+// Prints "A marathon is 42195.0 meters long"
+
+
+//Size와 Point구조체를 정의하고 그것을 사용하는 Rect 구조체를 정의했습니다.
+//Rect 구조체에서 모든 프로퍼티의 기본 값을 제공하기 때문에 Rect구조체는 기본 이니셜라이저와 멤버쪽 이니셜라이저를 자동으로 제공 받아 사용할 수 있습니다.
+
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
+}
+
+//기본적으로 제공되는 이니셜라이저를 사용해 초기화를 한 예제입니다.
+let defaultRect = Rect()
+let memberwiseRect = Rect(origin: Point(x: 2.0, y: 2.0), size: Size(width: 5.0, height: 5.0))
+
+//Rect 구조체를 추가적인 이니셜라이저를 제공하기 위해 확장 할 수 있습니다.
+extension Rect {
+    init(center: Point, size: Size) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2)
+        self.init(origin: Point(x: originX, y: originY), size: size)
+    }
+}
+
+//Rect에서 확장한 이니셜라이저를 사용한 코드는 다음과 같이 사용할 수 있습니다
+let centerRect = Rect(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, height: 3.0))
+
+
+
