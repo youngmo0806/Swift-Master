@@ -618,7 +618,6 @@ if airports.isEmpty {
     print("The airports dictionary is not empty.")
 }
 
-
 airports["LHR"] = "London"
 
 for (key,value) in airports {
@@ -631,6 +630,90 @@ for (key,value) in airports {
 //MARK: - 4. 제어문(Control Flow)
 //MARK: - 5. 함수(Functions)
 //MARK: - 6. 클로저(Closure)
+
+//기본 문법
+//{(prameter) -> return type in
+//    statements
+//}
+
+
+//Swift의 표준 라이브러리에 sorted(by:)라는 알려진 타입의 배열 값을 정렬하는 메소드를 제공합니다.
+//여기 by에 어떤 방법으로 정렬을 수행할 것인지에 대해 기술한 클로저를 넣으면 그 방법대로 정렬된 배열을 얻을 수 있습니다.
+let sampleNames = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+
+func backward(_ s1: String, _ s2: String) -> Bool {
+    return s1 > s2
+}
+
+var reversedNames = sampleNames.sorted(by: backward)
+
+//이렇게 함수로 따로 정의된 형태가 아닌 인자로 들어가 있는 형태의 클로저 : 인라인 클로저
+var reversedNames2 = sampleNames.sorted { (s1: String, s2: String) -> Bool in
+    return s1 < s2
+}
+
+var reversedNames3 = sampleNames.sorted { s1, s2 in
+    return s1 < s2
+}
+
+var reversedNames4 = sampleNames.sorted {
+    $0 > $1
+}
+
+var reversedNames5 = sampleNames.sorted(by: >)
+
+//후위 클로져.
+//함수의 마지막 인자로 클로저를 넣고 그 클로져가 길다면 후위 클로저를 사용할 수 있습니다.
+//이런 형태의 함수와 클로저가 있다면.
+func someFunctionThatTakesAClosure(closure: () -> Void) {
+    
+}
+
+someFunctionThatTakesAClosure(closure: {
+    
+})
+
+someFunctionThatTakesAClosure {
+    
+}
+
+//후위 클로저를 이용해 숫자(Int)를 문자(String)로 매핑(Mapping)하는 예제를 살펴 보겠습니다.
+//다음과 같은 문자와 숫자가 있습니다.
+let digitNames = [
+    0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",
+    5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+]
+
+let numbers = [16]
+
+print("===> \(16 % 10)")
+print("===> \(16 / 10)")
+
+//이 값을 배열의 map(_:) 메소드를 이용해 특정 값을 다른 특정 값으로 매핑하는 클로저를 구현합니다.
+let string = numbers.map { (number) -> String in
+    print("number => \(number)")
+    var number = number
+    var output = ""
+    
+    repeat{
+        output = digitNames[number % 10]! + output
+        print("output : \(output)")
+        number /= 10
+        print("number : \(number)")
+    } while number > 0
+    
+    
+    return output
+}
+
+
+
+
+
+// let strings는 타입 추론에 의해 문자 배열([String])타입을 갖습니다.
+// 결과는 숫자가 문자로 바뀐 ["OneSix", "FiveEight", "FiveOneZero"]가 됩니다.
+
+
 //MARK: - 7. 열거형(Enumerations)
 //MARK: - 8. 클래스와 구조체(Classes and Structures)
 //MARK: - 9. 프로퍼티(Properties)
@@ -665,6 +748,8 @@ print("A marathon is \(aMarathon) meters long")
 // Prints "A marathon is 42195.0 meters long"
 
 
+//-이니셜라이저
+
 //Size와 Point구조체를 정의하고 그것을 사용하는 Rect 구조체를 정의했습니다.
 //Rect 구조체에서 모든 프로퍼티의 기본 값을 제공하기 때문에 Rect구조체는 기본 이니셜라이저와 멤버쪽 이니셜라이저를 자동으로 제공 받아 사용할 수 있습니다.
 
@@ -675,20 +760,20 @@ struct Point {
     var x = 0.0, y = 0.0
 }
 struct Rect {
-    var origin = Point()
     var size = Size()
+    var origin = Point()
 }
 
 //기본적으로 제공되는 이니셜라이저를 사용해 초기화를 한 예제입니다.
 let defaultRect = Rect()
-let memberwiseRect = Rect(origin: Point(x: 2.0, y: 2.0), size: Size(width: 5.0, height: 5.0))
+let memberwiseRect = Rect(size: Size(width: 5.0, height: 5.0), origin: Point(x: 2.0, y: 2.0))
 
 //Rect 구조체를 추가적인 이니셜라이저를 제공하기 위해 확장 할 수 있습니다.
 extension Rect {
     init(center: Point, size: Size) {
         let originX = center.x - (size.width / 2)
         let originY = center.y - (size.height / 2)
-        self.init(origin: Point(x: originX, y: originY), size: size)
+        self.init(size: size, origin: Point(x: originX, y: originY))
     }
 }
 
@@ -697,3 +782,96 @@ let centerRect = Rect(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, heig
 
 
 
+//메소드
+extension Int {
+    func repetitions(task: () -> Void) {
+        for _ in 0..<self {
+            task()
+        }
+    }
+    
+    //변경가능한
+    mutating func square() {
+        self = self * self
+    }
+    
+    //익스텐션을 이용해 존재하는 타입에 새로운 서브스크립트를 추가할 수 있습니다.
+    //다음 예제는 Swift의 built-in 타입에 integer 서브스크립트를 추가한 예제입니다.
+    //서브스크립트 [n]은 숫자의 오른쪽에서부터 n번째 위치하는 정수를 반환합니다.
+    subscript(digitIndex: Int) -> Int {
+        var decimalBase = 1
+        
+        for _ in 0..<digitIndex {
+            decimalBase *= 10
+        }
+        print("\(self)")
+        return (self / decimalBase) % 10
+        //10 * n번째 수로 현재 수를 나눈 것의 나머지
+        //1인 경우 746381295 * 10 -> 5가 나머지
+        //2인 경유 746381295 * 10 -> 9가 나머지
+    }
+}
+
+var someInt = 5
+
+someInt.repetitions {
+    print("test")
+}
+
+someInt.square()
+
+10[0]
+// returns 0
+746381295[0]
+// returns 5
+746381295[1]
+// returns 9
+746381295[2]
+// returns 2
+746381295[8]
+// returns 7
+
+//만약 Int값에서 요청한 값이 처리할 수 있는 자릿 수를 넘어가면 서브스크립트 구현에서 0을 반환합니다.
+746381295[9]
+// 9로 처리할 수 있는 자릿 수를 넘어가면 0을 반환
+0746381295[9]
+
+
+//중첩 타입
+//-익스텐션을 이용해 존재하는 클래스, 구조체, 열거형에 중첩 타입을 추가할 수 있습니다.
+extension Int {
+    enum Kind {
+        case negative, zero, positive
+    }
+    var kind: Kind {
+        switch self {
+        case 0:
+            return .zero
+        case let x where x > 0:
+            return .positive
+        default:
+            return .negative
+        }
+    }
+}
+
+//위 예제는 Int에 중첩형 enum을 추가한 예제입니다. Kind라고 불리는 열거형은 Int를 음수, 0, 양수로 표현합니다.
+//아래 예제는 새로운 계산된 프로퍼티 kind를 이용해 특정 수가 음수, 0, 양수 중 어떤 것인지를 나타내는 예제입니다.
+
+func printIntegerKinds(_ numbers: [Int]) {
+    for number in numbers {
+        switch number.kind {
+        case .negative:
+            print("- ", terminator: "")
+        case .zero:
+            print("0 ", terminator: "")
+        case .positive:
+            print("+ ", terminator: "")
+        }
+    }
+    print("")
+}
+printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
+// Prints "+ + - 0 - 0 + "
+
+//printIntegerKinds(_:) 함수를 Int 배열을 입력으로 받아 각 Int가 음수, 0, 양수 어디에 속하는지 계산해서 그에 맞는 기호를 반환하는 함수 입니다.
