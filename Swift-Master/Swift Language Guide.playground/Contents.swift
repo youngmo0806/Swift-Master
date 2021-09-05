@@ -875,3 +875,47 @@ printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 // Prints "+ + - 0 - 0 + "
 
 //printIntegerKinds(_:) 함수를 Int 배열을 입력으로 받아 각 Int가 음수, 0, 양수 어디에 속하는지 계산해서 그에 맞는 기호를 반환하는 함수 입니다.
+
+var testString = "y oung mo"
+
+
+
+
+
+//야곰 문제
+import Foundation
+
+struct User {
+    var name: String
+    var age: String
+    var phoneNumber: String
+    
+    init(name: String, age: String, phoneNumber: String) {
+        self.name = name.replacingOccurrences(of: " ", with: "")
+        self.age = age.replacingOccurrences(of: " ", with: "")
+        self.phoneNumber = phoneNumber.replacingOccurrences(of: " ", with: "")
+    }
+}
+print("연락처 정보를 입력해주세요 : ",terminator:"")
+
+var inputValue = readLine()
+
+if let input = inputValue {
+
+    let array = input.components(separatedBy: "/")
+    
+    let userInfo = User(name: array[0].trimmingCharacters(in: .whitespaces), age: array[1].trimmingCharacters(in: .whitespaces), phoneNumber: array[2].trimmingCharacters(in: .whitespaces))
+        
+    if let ageFlag = Int(userInfo.age) {
+        print("입력하신 정보는 \(ageFlag)세 \(userInfo.name)(\(userInfo.phoneNumber))입니다.")
+    } else {
+        print("입력한 나이정보가 잘못되었습니다. 입력 형식을 확인해주세요.")
+    }
+    
+    
+    
+    
+//    print("입력하신 정보는 \(array[1].replacingOccurrences(of: " ", with: ""))세 \(array[0].replacingOccurrences(of: " ", with: ""))(\(array[2].replacingOccurrences(of: " ", with: "")))입니다.")
+//    print("입력하신 정보는 \(userInfo.age)세 \(userInfo.name) \(userInfo.phoneNumber)입니다.")
+}
+
