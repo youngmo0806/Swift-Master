@@ -628,6 +628,112 @@ for (key,value) in airports {
 
 
 //MARK: - 4. 제어문(Control Flow)
+//Swift 에서는 while loop, if guard, switch, for-in 문 등 많은 제어문을 제공합니다.
+
+//For-in Loops
+let namesArry = ["Anna", "Alex", "Brian", "Jack"]
+for name in namesArry {
+    print("Hello, \(name)!")
+}
+// Hello, Anna!
+// Hello, Alex!
+// Hello, Brian!
+// Hello, Jack!
+
+let numberOfLegs = ["spider":8,"ant":6,"cat":4]
+for (animalName, legCount) in numberOfLegs {
+    print("\(animalName)s have \(legCount) legs")
+}
+
+for index in 1...5 {
+    print("\(index) times 5 is \(index * 5)")
+}
+
+let base = 3
+let power = 10
+var answer = 1
+for _ in 1...power {
+    answer *=  base
+}
+print("\(base) to the power of \(power) is \(answer)")
+
+let minutes = 60
+for tickMark in 0..<minutes {
+//    print(tickMark)
+}
+
+
+let minuteInterval = 5
+for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
+//    print(tickMark)
+}
+
+let hours = 12
+let hourInterval = 3
+
+for tickMark in stride(from: 1, to: hours, by: hourInterval) {
+    print(tickMark)
+}
+
+
+//While Loops
+//--while , repeat-while 두가지가 존재한다.
+//while - 조건이 거짓일때 까지 구문을 반복합니다.
+var square = 0
+var diceRoll = 0
+
+//while square < finalSquare {
+//    diceRoll += 1
+//    if diceRoll == 7 {
+//        diceRoll = 1
+//    }
+//
+//    square += diceRoll
+//
+//    if square < board.count {
+//        square += board[square]
+//    }
+//}
+//print("Game over")
+
+//Repeat-While
+// 구문을 최소 한번 이상 실행하고 while 조건이 거짓일때 까지 반복한다.
+
+//repeat {
+//    // move up or down for a snake or ladder
+//    square += board[square]
+//    // roll the dice
+//    diceRoll += 1
+//    if diceRoll == 7 { diceRoll = 1 }
+//    // move by the rolled amount
+//    square += diceRoll
+//} while square < finalSquare
+//print("Game over!")
+
+//if문 pass--
+
+//Switch
+let someCharacter: Character = "z"
+
+switch someCharacter {
+case "z":
+    print("switch yes")
+//    break 다른 언어들처럼 break를 꼭 사용해야 하지 않음 (암시적 진행을 사용하지 않음)
+case "a","A": //여러 case 조건을 넣을수 있음
+    print("switch no")
+default:
+    print("default is basic")
+}
+
+
+
+
+
+
+
+
+
+
 //MARK: - 5. 함수(Functions)
 //MARK: - 6. 클로저(Closure)
 
@@ -705,9 +811,6 @@ let string = numbers.map { (number) -> String in
     
     return output
 }
-
-
-
 
 
 // let strings는 타입 추론에 의해 문자 배열([String])타입을 갖습니다.
@@ -876,46 +979,17 @@ printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 
 //printIntegerKinds(_:) 함수를 Int 배열을 입력으로 받아 각 Int가 음수, 0, 양수 어디에 속하는지 계산해서 그에 맞는 기호를 반환하는 함수 입니다.
 
-var testString = "y oung mo"
+
+
+//MARK: - 20. 프로토콜(Protocols)
+//MARK: - 21. 지네릭(Generics)
+//MARK: - 22. 자동 참조 카운트(Automatic Reference Counting)
+//MARK: - 23. 메모리 안정성(Memory Safety)
+//MARK: - 24. 접근제어(Access Control)
+//MARK: - 25. 고급 연산자(Advanced Operators)
+//비트 연산자 - swift 에서도 여러 비트 연산자를 지원합니다.
+//-비트연산자 NOT (Bitwise NOT Operator)
 
 
 
-
-
-//야곰 문제
-import Foundation
-
-struct User {
-    var name: String
-    var age: String
-    var phoneNumber: String
-    
-    init(name: String, age: String, phoneNumber: String) {
-        self.name = name.replacingOccurrences(of: " ", with: "")
-        self.age = age.replacingOccurrences(of: " ", with: "")
-        self.phoneNumber = phoneNumber.replacingOccurrences(of: " ", with: "")
-    }
-}
-print("연락처 정보를 입력해주세요 : ",terminator:"")
-
-var inputValue = readLine()
-
-if let input = inputValue {
-
-    let array = input.components(separatedBy: "/")
-    
-    let userInfo = User(name: array[0].trimmingCharacters(in: .whitespaces), age: array[1].trimmingCharacters(in: .whitespaces), phoneNumber: array[2].trimmingCharacters(in: .whitespaces))
-        
-    if let ageFlag = Int(userInfo.age) {
-        print("입력하신 정보는 \(ageFlag)세 \(userInfo.name)(\(userInfo.phoneNumber))입니다.")
-    } else {
-        print("입력한 나이정보가 잘못되었습니다. 입력 형식을 확인해주세요.")
-    }
-    
-    
-    
-    
-//    print("입력하신 정보는 \(array[1].replacingOccurrences(of: " ", with: ""))세 \(array[0].replacingOccurrences(of: " ", with: ""))(\(array[2].replacingOccurrences(of: " ", with: "")))입니다.")
-//    print("입력하신 정보는 \(userInfo.age)세 \(userInfo.name) \(userInfo.phoneNumber)입니다.")
-}
 
