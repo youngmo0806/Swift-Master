@@ -735,27 +735,40 @@ default:
 
 
 //MARK: - 5. 함수(Functions)
+
+
+
+
 //MARK: - 6. 클로저(Closure)
+//클로저(Closure)는 코드 블럭으로 C 와 Objective-C의 블럭(blocks)과 다른 언어의 람다(lambdas)와 비슷합니다.
+//클로저는 어떤 상수나 변수의 참조를 캡쳐(Capture)해 저장할 수 있습니다. Swift는 이 캡쳐와 관련한 모든 메모리를 알아서 처리합니다.
+
+/**
+- 전역함수(global function)와 중첩 함수(nested function)은 실제 클로저의 특별한 경우입니다.
+- 클로저는 다음 세가지 형태 중 하나를 갖습니다.
+    - 전역함수 : 이름이 있고 어떤 값도 캡쳐하지 않는 클로저
+    - 중첩함수 : 이름이 있고 관련한 함수로 부터 값을 캡쳐 할 수 있는 클로저
+    - 클로저 표현 : 경량화 된 문법으로 쓰여지고 관련된 문맥(Context)으로부터 값을 캡쳣할 수 있는 이름이 없는 클로저
+*/
 
 //기본 문법
 //{(prameter) -> return type in
 //    statements
 //}
 
-
 //Swift의 표준 라이브러리에 sorted(by:)라는 알려진 타입의 배열 값을 정렬하는 메소드를 제공합니다.
 //여기 by에 어떤 방법으로 정렬을 수행할 것인지에 대해 기술한 클로저를 넣으면 그 방법대로 정렬된 배열을 얻을 수 있습니다.
 let sampleNames = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
 
 func backward(_ s1: String, _ s2: String) -> Bool {
-    return s1 > s2
+    return s1 < s2
 }
 
 var reversedNames = sampleNames.sorted(by: backward)
 
 //이렇게 함수로 따로 정의된 형태가 아닌 인자로 들어가 있는 형태의 클로저 : 인라인 클로저
 var reversedNames2 = sampleNames.sorted { (s1: String, s2: String) -> Bool in
-    return s1 < s2
+    return s1 > s2
 }
 
 var reversedNames3 = sampleNames.sorted { s1, s2 in
@@ -790,10 +803,10 @@ let digitNames = [
     5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
 ]
 
-let numbers = [16]
+let numbers = [1987]
 
-print("===> \(16 % 10)")
-print("===> \(16 / 10)")
+print("===> \(16 % 10)") //6
+print("===> \(16 / 10)") //1
 
 //이 값을 배열의 map(_:) 메소드를 이용해 특정 값을 다른 특정 값으로 매핑하는 클로저를 구현합니다.
 let string = numbers.map { (number) -> String in
@@ -818,17 +831,41 @@ let string = numbers.map { (number) -> String in
 
 
 //MARK: - 7. 열거형(Enumerations)
+
+
 //MARK: - 8. 클래스와 구조체(Classes and Structures)
+
+
 //MARK: - 9. 프로퍼티(Properties)
+
+
 //MARK: - 10. 메소드(Methods)
+
+
 //MARK: - 11. 서브스크립트(Subscripts)
+
+
 //MARK: - 12. 상속(Inheritance)
+
+
 //MARK: - 13. 초기화(Initialization)
+
+
 //MARK: - 14. 초기화 해비(Deinitialization)
+
+
 //MARK: - 15. 옵셔널 체이닝(Optional Chaining)
+
+
 //MARK: - 16. 에러 처리(Error Handling)
+
+
 //MARK: - 17. 타입 캐스팅(Type Casting)
+
+
 //MARK: - 18. 중첩 타입(Nested Types)
+
+
 //MARK: - 19. 익스텐션(Extensions)
 // - 계산된 프로퍼티
 extension Double {
