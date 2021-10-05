@@ -5,12 +5,12 @@ let b = 10
 var a = 5
 a = b
 
-print(a)
+print(a)    //10
 
 let (x,y) = (1,2)
 
-print(x)
-print(y)
+print(x)    //1
+print(y)    //2
 
 
 if x == y {
@@ -26,8 +26,8 @@ else {
 2 * 3       //6
 10.0 / 2.5  //4
 
-9 % 4   //1
--9 % 4  //-1
+9 % 4   //1 //나머지
+-9 % 4  //-1 //나머지
 
 //단항 음수 연산자
 let three = 3
@@ -726,6 +726,103 @@ default:
 }
 
 
+//인터벌 매칭
+let approximateCount = 42
+let countedThings = "moons orbiting Saturn"
+let naturalCount: String
+
+switch approximateCount {
+    case 0 :
+        naturalCount = "1"
+    case 0..<15 :
+        naturalCount = "2"
+    case 15..<50 :
+        naturalCount = "3"
+    default:
+        naturalCount = "many"
+}
+
+print("\(naturalCount) : \(countedThings)")
+
+//튜플 매칭
+let somePoint = (0, 1)
+switch somePoint {
+    case (0, 0):
+        print("\(somePoint) is at the origin")
+    case (_, 0):
+        print("\(somePoint) is on the x-axis")
+    case (0, _):
+        print("\(somePoint) is on the y-axis")
+    case (-2...2, -2...2):
+        print("\(somePoint) is inside the box")
+    default:
+        print("\(somePoint) is outside of the box")
+}
+
+//값 바인딩
+let anotherPoint = (2, 0)
+switch anotherPoint {
+case (let x, 0):
+    print("on the x-axis with an x value of \(x)")
+case (0, let y):
+    print("on the y-axis with a y value of \(y)")
+case let (x, y):
+    print("somewhere else at (\(x), \(y))")
+}
+// Prints "on the x-axis with an x value of 2"
+
+
+//Where문, case 문에 where 조건을 사용할수 있습니다.
+let yetAnotherPoint = (1, -1)
+switch yetAnotherPoint {
+case let (x, y) where x == y:
+    print("(\(x), \(y)) is on the line x == y")
+case let (x, y) where x == -y:
+    print("(\(x), \(y)) is on the line x == -y")
+case let (x, y):
+    print("(\(x), \(y)) is just some arbitrary point")
+}
+// Prints "(1, -1) is on the line x == -y"
+
+
+//혼합 케이스 case 에 콤마(,)로 구분해 여러 조건을 혼합해 서용할수 있다.
+let someChar: Character = "e"
+switch someChar {
+    case "a", "e", "i", "o", "u":
+        print("\(someChar) is a vowel")
+    case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+         "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+        print("\(someChar) is a consonant")
+    default:
+        print("\(someChar) is not a vowel or a consonant")
+}
+
+//혼합케이스 에서도 값-바인딩을 사용할 수 있습니다.
+let stillAnotherPoint = (9, 0)
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+    print("On an axis, \(distance) from the origin")
+default:
+    print("Not on an axis")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1011,6 +1108,7 @@ func printIntegerKinds(_ numbers: [Int]) {
     }
     print("")
 }
+
 printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 // Prints "+ + - 0 - 0 + "
 
@@ -1030,3 +1128,24 @@ printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 
 
 
+
+
+
+//MARK: --TEST
+
+func testT(_ first: ()->()) {
+    first()
+}
+
+testT({
+    print("iPhone")
+    
+})
+
+testT() {
+    print("() 없앴지롱")
+}
+
+testT {
+    print("LOVER")
+}
