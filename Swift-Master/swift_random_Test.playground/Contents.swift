@@ -12,3 +12,14 @@ print("arc4random_uniform -> UInt32 return => [\(test2)]")
 
 var test3 = drand48() //0~0.1 사이의 난수
 print("drand48 -> Double return => [\(test3)]")
+
+
+
+func makeIncrementer() -> ((Int) -> Int) {
+    func addOne(number: Int) -> Int {
+        return 1 + number
+    }
+    return addOne
+}
+var increment = makeIncrementer()
+increment(7)
