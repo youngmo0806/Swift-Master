@@ -61,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11E233602763291800F15FED /* closureTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = closureTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		11FFBFF72750610C00A651CC /* swift_random_Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_random_Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9F72C974268C32D300695B38 /* CodableTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodableTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9FA157A2268C36900050DE56 /* ProtocolTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -221,6 +222,7 @@
 				9F72C974268C32D300695B38 /* CodableTest.playground */,
 				9FF351CA26DDB22E00FBE64A /* Swift Language Guide.playground */,
 				11FFBFF72750610C00A651CC /* swift_random_Test.playground */,
+				11E233602763291800F15FED /* closureTest.playground */,
 			);
 			path = "Swift-Master";
 			sourceTree = "<group>";
