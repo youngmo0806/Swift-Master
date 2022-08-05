@@ -121,6 +121,7 @@
 		F48ABFE02675E71900F8E76B /* connectivity-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connectivity-bar.png"; sourceTree = "<group>"; };
 		F48ABFE12675E71900F8E76B /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		F48ABFE22675E71A00F8E76B /* file-tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-tree.png"; sourceTree = "<group>"; };
+		F4A4C2E2289CD8650086F490 /* CodeTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CodeTest.playground; path = "Swift-Master/CodeTest.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4B3DA6F26D39017003D6851 /* ios_30_project.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ios_30_project.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Auto-Resizing.storyboard"; sourceTree = "<group>"; };
 		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -181,6 +182,7 @@
 		ADC10BF126413C54003C5EF7 = {
 			isa = PBXGroup;
 			children = (
+				F4A4C2E2289CD8650086F490 /* CodeTest.playground */,
 				ADC10BFC26413C54003C5EF7 /* Swift-Master */,
 				ADC10BFB26413C54003C5EF7 /* Products */,
 			);
