@@ -1,3 +1,6 @@
 import UIKit
 
-var greeting = "Hello, playground"
+
+//protocol 상속
+
+
