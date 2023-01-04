@@ -2,5 +2,13 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_23_%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%8F%E1%85%A9%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%BC.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=497&amp;EndingColumnNumber=13&amp;EndingLineNumber=34&amp;StartingColumnNumber=5&amp;StartingLineNumber=34&amp;Timestamp=694487271.008394"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_23_%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%8F%E1%85%A9%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%BC.playground#CharacterRangeLen=22&amp;CharacterRangeLoc=575&amp;EndingColumnNumber=0&amp;EndingLineNumber=38&amp;StartingColumnNumber=1&amp;StartingLineNumber=37&amp;Timestamp=694487271.008477"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

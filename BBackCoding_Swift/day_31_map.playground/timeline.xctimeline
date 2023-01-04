@@ -2,5 +2,21 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_31_map.playground#CharacterRangeLen=16&amp;CharacterRangeLoc=875&amp;EndingColumnNumber=21&amp;EndingLineNumber=42&amp;StartingColumnNumber=5&amp;StartingLineNumber=42&amp;Timestamp=694509905.2629451"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_31_map.playground#CharacterRangeLen=13&amp;CharacterRangeLoc=259&amp;EndingColumnNumber=18&amp;EndingLineNumber=15&amp;StartingColumnNumber=5&amp;StartingLineNumber=15&amp;Timestamp=694509905.263006"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_31_map.playground#CharacterRangeLen=2&amp;CharacterRangeLoc=310&amp;EndingColumnNumber=21&amp;EndingLineNumber=16&amp;StartingColumnNumber=19&amp;StartingLineNumber=16&amp;Timestamp=694509905.26305"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_31_map.playground#CharacterRangeLen=16&amp;CharacterRangeLoc=325&amp;EndingColumnNumber=27&amp;EndingLineNumber=17&amp;StartingColumnNumber=11&amp;StartingLineNumber=17&amp;Timestamp=694509905.2630939"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

@@ -2,5 +2,9 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmo/Desktop/Swift-Master/BBackCoding_Swift/day_24_%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%8F%E1%85%A9%E1%86%AF_associatedType.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=638&amp;EndingColumnNumber=0&amp;EndingLineNumber=42&amp;StartingColumnNumber=1&amp;StartingLineNumber=41&amp;Timestamp=694488222.866057"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
