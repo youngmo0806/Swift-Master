@@ -2,5 +2,13 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmohome/Documents/Swift-Master/BBackCoding_Swift/day_37_getter:setter.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=441&amp;EndingColumnNumber=13&amp;EndingLineNumber=31&amp;StartingColumnNumber=5&amp;StartingLineNumber=31&amp;Timestamp=694663094.128471"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/youngmohome/Documents/Swift-Master/BBackCoding_Swift/day_37_getter:setter.playground#CharacterRangeLen=13&amp;CharacterRangeLoc=470&amp;EndingColumnNumber=0&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=33&amp;Timestamp=694663094.128623"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
