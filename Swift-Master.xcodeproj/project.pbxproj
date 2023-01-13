@@ -162,6 +162,7 @@
 		F4A4C2E2289CD8650086F490 /* CodeTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CodeTest.playground; path = "Swift-Master/CodeTest.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4B3DA6F26D39017003D6851 /* ios_30_project.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ios_30_project.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4CB08B1266232DF006A3428 /* Auto-Resizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Auto-Resizing.storyboard"; sourceTree = "<group>"; };
+		F4DD43812970E3F600711CD3 /* escaping Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "escaping Closure.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F4EA51ED265FE5150049C8D0 /* LocalAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LocalAlarm.storyboard; path = "Swift-Master/LocalAlarm.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4EA51EF265FE5890049C8D0 /* LocalAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalAlarmController.swift; path = "Swift-Master/LocalAlarmController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -265,6 +266,7 @@
 				9FF351CA26DDB22E00FBE64A /* Swift Language Guide.playground */,
 				11FFBFF72750610C00A651CC /* swift_random_Test.playground */,
 				11E233602763291800F15FED /* closureTest.playground */,
+				F4DD43812970E3F600711CD3 /* escaping Closure.playground */,
 				117BF9782771C4D9005DB9D1 /* sampleTest.playground */,
 			);
 			path = "Swift-Master";
