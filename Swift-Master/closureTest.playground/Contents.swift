@@ -45,3 +45,49 @@ setPlus(a: 1, fn: plus)
 print("4")
 
 
+
+//=========================================================================================================
+//부가세
+func addVAT(source: Double) -> Double {
+    return source * 1.1
+}
+
+//할인
+func couponDiscount(source: Double) -> Double {
+    return source * 0.9
+}
+
+func finalPrice(source: Double, additional:(Double) -> Double) -> Double {
+
+    let price = additional(source)
+
+    return price
+
+}
+
+let transaction1 = finalPrice(source: 30.0, additional: addVAT(source:))
+
+
+//=========================================================================================================
+
+func makeAdder(x: Int) -> (Int) -> Int {
+    
+    func adder(a: Int) -> Int {
+        print("x => \(x) a => \(a)")
+        return x + a
+    }
+    
+    return adder
+}
+
+
+let add5 = makeAdder(x: 5)
+let add10 = makeAdder(x: 10)
+
+
+print(add5(2))
+
+//print(add10(2))
+//
+//print(makeAdder(x: 5)(2))
+
